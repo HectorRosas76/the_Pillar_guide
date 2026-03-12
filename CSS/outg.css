@@ -1,5 +1,10 @@
 body{
   background-color: red;
+  margin: 0;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -27,8 +32,8 @@ footer{
 
 .float{
     border: 1px solid #000000;
-    width: 80vw;
-    height: 80vh;
+    width: 80;
+    height: 80;
     margin: auto;
     margin-top: 10vh;
     position: relative;
@@ -59,7 +64,6 @@ footer{
     right: 20px;
     z-index: 1;
 }
-
 .circule{
 width: 10px;
 height: 10px;
@@ -81,3 +85,57 @@ animation-timing-function: ease-in;
 
     }
  
+.logoo{
+height: 150px;
+    width: 250px;
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    background-color: #290202;
+    width: 100%;
+    z-index: 15;
+
+}
+
+.menu ul{
+    display: table;
+    width: 100%;
+ margin: 0%;
+    padding: 0%;
+}
+
+.menu li{
+    display: table-cell;
+    text-align: center;
+}
+
+.menu a{
+    display: block;
+    padding: 20px;
+    color: white;
+}
+
+footer{
+    border: 2px solid;
+    text-align: left;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+
+}
+
+.separador{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 40 px;
+}
