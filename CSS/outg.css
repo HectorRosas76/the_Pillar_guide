@@ -30,13 +30,14 @@ footer{
     border-radius: 50%;
 }
 
-.float{
+.float .personaje{
     border: 1px solid #000000;
     width: 80;
     height: 80;
     margin: auto;
     margin-top: 10vh;
     position: relative;
+    padding: auto;
 }
 
 .a1{
@@ -137,5 +138,41 @@ footer{
 .separador{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
-    font-weight: 40 px;
+    font-weight: 40px;
+}
+
+.personaje{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    grid-template-areas: "h h h h"
+    "menu menu s s"
+    "menu menu s s"
+    "menu f f f"
+    ;
+}
+
+.personaje header{
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: h;
+    background-color: aquamarine;
+}
+
+.personaje nav{
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: menu;
+background-color: yellow;
+}
+
+.personaje section{
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: s;
+    background-color: cornflowerblue;
+}
+
+.personaje footer{
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: f ;
+    background-color: teal;
 }
