@@ -72,9 +72,12 @@ animation-timing-function: ease-in;
 }
 
 @keyframes girar {
-    from{top: 100vh;}
-    to {top: ;}
+    from{top: 100vh;
+    transform: rotate(0deg);}
+    to {top: 90vh;
+    background-color: aqua;
+    transform: rotate(360deg);
+    }
 
     }
  
-}
