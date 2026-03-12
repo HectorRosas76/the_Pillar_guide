@@ -29,7 +29,7 @@ footer{
     border-radius: 50%;
 }
 
-.float{
+.float, .flex{
     border: 1px solid #000000;
     width: 80;
     height: 80;
@@ -63,7 +63,6 @@ footer{
     right: 20px;
     z-index: 1;
 }
-
 .circule{
 width: 10px;
 height: 10px;
@@ -114,4 +113,9 @@ height: 150px;
     display: block;
     padding: 20px;
     color: white;
+}
+
+footer{
+    border: 2px solid;
+    text-align: left;
 }
