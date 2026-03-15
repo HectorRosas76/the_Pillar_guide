@@ -1,12 +1,43 @@
 header {
     text-align: center;
-    font-family: sans-serif;
-    font-style: normal;
+    font-family: "Pillar_Font";
+    color: red;
+    font-size: 25px;
 }
 
-body, p {
+body {
     background-color: red;
-    text-align: center;
+    background-image: url(../Recursos/HC9HsQQX0AAnkK9.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.float p {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0% 10%;
+    text-align: center;
+}
+
+.float {
+    background-color: pink;
+    border: 2px solid red;
+    width: 950px;
+    height: auto;
+    margin: auto;
+}
+
+.seccion {
+    background-color: rgb(255, 192, 236);
+    border: 1px solid #000000;
+    width: 250px;
+    height: auto;
+    margin: 0 25px 25px 25px;
+}
+
+.seccion li {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-left: 20px;
+    list-style: none;
 }
