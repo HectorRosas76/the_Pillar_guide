@@ -14,30 +14,53 @@ body {
     background-attachment: fixed;
 }
 
-.float p {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+div #banner {
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 20px 0px;
 }
 
-.float {
+.texto p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.texto {
     background-color: pink;
     border: 2px solid red;
-    width: 950px;
+    width: 900px;
     height: auto;
     margin: auto;
+    padding: 0px 30px;
 }
 
-.seccion {
+.secciones {
     background-color: rgb(255, 192, 236);
     border: 1px solid #000000;
     width: 250px;
     height: auto;
     margin: 0 25px 25px 25px;
+    padding: 15px;
+    text-decoration: none;
 }
 
-.seccion li {
-    font-family: Arial, Helvetica, sans-serif;
+.secciones li {
+    font-family: Pillar_Font;
+    font-size: 25px;
     text-align: left;
     padding-left: 20px;
     list-style: none;
+    text-decoration: none;
+}
+
+.secciones li a {
+    text-decoration: none;
+    color: black;
+}
+
+.secciones li a:hover {
+    color: red;
 }
