@@ -1,0 +1,20 @@
+* {
+    margin: 15px;
+    padding: 25px;
+}
+
+header {
+    text-align: center;
+    font-family: "Pillar_Font";
+    color: red;
+    font-size: 25px;
+}
+
+body {
+    background-color: red;
+    background-image: url(../Recursos/HC9HsQQX0AAnkK9.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
