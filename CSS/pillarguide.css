@@ -59,6 +59,57 @@ footer{
         text-align: left;
 }
 
+.pascua{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+.float{
+    border: 1px solid #000000;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: 10vh;
+    position: relative;
+    padding: auto;
+}
+
+.personaje{
+    border: 1px solid #000000;
+    width: 80vw;
+    height: 300px;
+    margin: auto;
+    margin-top: 10vh;
+    position: relative;
+}
+
+
+.a1{
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 0px;
+    border: 1px solid #000;
+
+    transition-property: width, border-radius, background-color;
+    transition-duration: 500ms, 1s, 1s;
+    transition-timing-function: ease-in-out, linear, ease-in-out;
+    transition-delay: 1s;
+}
+
+.a1:hover{
+    width: 25px;
+    background-color: rebeccapurple;
+    border-radius: 20px;
+}
+
+.float .pascua.a1{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 1;
+}
 .circule{
 width: 10px;
 height: 10px;

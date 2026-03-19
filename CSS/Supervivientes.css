@@ -13,6 +13,27 @@ body {
 
 /* Menú de navegación (sticky) */
 .menu {
+p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+td{
+    color: white;
+}
+strong{
+    color:white;
+}
+
+.texto img{
+    display: block;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.menu{
     position: sticky;
     top: 0;
     background-color: #290202;
@@ -28,6 +49,17 @@ body {
 }
 
 .menu li {
+
+}
+
+.menu ul{
+    display: table;
+    width: 100%;
+ margin: 0%;
+    padding: 0%;
+}
+
+.menu li{
     display: table-cell;
     text-align: center;
 }
@@ -170,4 +202,50 @@ p {
     .tabla-clases img {
         max-width: 100px;
     }
+.menu a{
+    display: block;
+    padding: 20px;
+    color: white;
+}
+
+.float .pascua.a1{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 1;
+}
+
+.a1{
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 0px;
+    border: 1px solid #000;
+
+    transition-property: width, border-radius, background-color;
+    transition-duration: 500ms, 1s, 1s;
+    transition-timing-function: ease-in-out, linear, ease-in-out;
+    transition-delay: 1s;
+}
+
+.a1:hover{
+    width: 25px;
+    background-color: rebeccapurple;
+    border-radius: 20px;
+}
+
+.pascua{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.float{
+    border: 1px solid #000000;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: 10vh;
+    position: relative;
+    padding: auto;
 }
