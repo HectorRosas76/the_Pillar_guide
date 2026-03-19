@@ -1,0 +1,244 @@
+/* ===== ESTILOS BASE (compartidos con las otras páginas) ===== */
+body {
+    background-color: red;
+    background-image: url(../Recursos/HC9HsQQX0AAnkK9.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menú de navegación (sticky) */
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: #290202;
+    width: 100%;
+    z-index: 15;
+}
+
+.menu ul {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: table-cell;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Pillar_Font', Impact, 'Arial Black', sans-serif;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background-color: #4a0404;
+}
+
+/* Contenedor principal (fondo rosa, bordes rojos) */
+.contenedor-principal {
+    background-color: pink;
+    border: 2px solid red;
+    width: 900px;
+    height: auto;
+    margin: 20px auto;
+    padding: 0 30px 30px 30px;
+    box-sizing: border-box;
+}
+
+/* Títulos */
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pillar_Font', Impact, 'Arial Black', sans-serif;
+    color: red;
+    font-size: 40px;
+    margin: 20px 0 10px;
+    text-shadow: 2px 2px 0 black;
+}
+
+h2 {
+    font-family: 'Pillar_Font', Impact, 'Arial Black', sans-serif;
+    color: #290202;
+    font-size: 30px;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Párrafos */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+/* Imagen principal con borde y pie de foto */
+.imagen-principal {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagen-principal img {
+    max-height: 400px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.imagen-principal p {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    color: #290202;
+    margin-top: 5px;
+}
+
+/* Contenedor de audio */
+.audio-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.audio-container audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+.audio-container p {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    color: #290202;
+    margin-top: 5px;
+}
+
+/* ===== TABLAS ===== */
+/* Tabla de estadísticas generales (sin imágenes) */
+.tabla-estadisticas {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tabla-estadisticas th {
+    background-color: #290202;
+    color: white;
+    font-family: 'Pillar_Font', Impact, sans-serif;
+    font-size: 22px;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.tabla-estadisticas td {
+    border: 1px solid #290202;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Tablas de habilidades (con imagen a la izquierda) */
+.tabla-habilidad {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tabla-habilidad th {
+    background-color: #290202;
+    color: white;
+    font-family: 'Pillar_Font', Impact, sans-serif;
+    font-size: 22px;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.tabla-habilidad td {
+    border: 1px solid #290202;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/* Celda de la imagen: sin bordes en la imagen */
+.tabla-habilidad .imagen-habilidad {
+    width: 200px;
+    text-align: center;
+    background-color: rgba(255, 240, 240, 0.8);
+}
+
+.tabla-habilidad .imagen-habilidad img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* SIN BORDES */
+    border: none;
+    border-radius: 0;
+}
+
+/* Texto de la habilidad */
+.tabla-habilidad td:last-child {
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Alternar colores en filas para mejorar legibilidad */
+.tabla-habilidad tr:nth-child(even) {
+    background-color: #ffe0e0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+    .contenedor-principal {
+        width: 95%;
+        padding: 0 15px;
+    }
+
+    .tabla-habilidad .imagen-habilidad {
+        width: 150px;
+    }
+
+    .tabla-habilidad .imagen-habilidad img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tabla-habilidad .imagen-habilidad {
+        display: block;
+        width: 100%;
+    }
+
+    .tabla-habilidad td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tabla-habilidad .imagen-habilidad img {
+        margin: 0 auto;
+    }
+}

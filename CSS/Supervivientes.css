@@ -1,0 +1,173 @@
+/* ===== ESTILOS GENERALES (antes en General.css) ===== */
+body {
+    background-color: red;
+    background-image: url(../Recursos/HC9HsQQX0AAnkK9.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menú de navegación (sticky) */
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: #290202;
+    width: 100%;
+    z-index: 15;
+}
+
+.menu ul {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: table-cell;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Pillar_Font', Impact, 'Arial Black', sans-serif;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background-color: #4a0404;
+}
+
+/* Contenedor principal (fondo rosa, bordes rojos) */
+.contenedor-principal {
+    background-color: pink;
+    border: 2px solid red;
+    width: 900px;
+    height: auto;
+    margin: 20px auto;
+    padding: 0 30px 20px 30px;
+    box-sizing: border-box;
+}
+
+/* Títulos */
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pillar_Font', Impact, 'Arial Black', sans-serif;
+    color: red;
+    font-size: 40px;
+    margin: 20px 0 10px;
+    text-shadow: 2px 2px 0 black;
+}
+
+h3 {
+    font-family: 'Pillar_Font', Impact, 'Arial Black', sans-serif;
+    font-size: 30px;
+    color: darkred;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Párrafos */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+/* Imágenes */
+.imagen-principal {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.imagen-tienda {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+    border: 2px solid red;
+    border-radius: 8px;
+}
+
+/* ===== ESTILOS ESPECÍFICOS PARA LA TABLA DE CLASES ===== */
+.tabla-clases {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tabla-clases th {
+    background-color: #290202;
+    color: white;
+    font-family: 'Pillar_Font', Impact, sans-serif;
+    font-size: 22px;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.tabla-clases td {
+    border: 1px solid #290202;
+    padding: 15px;
+    vertical-align: top;
+}
+
+.tabla-clases td:first-child {
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabla-clases img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid red;
+    border-radius: 8px;
+}
+
+.tabla-clases tr:nth-child(even) {
+    background-color: #ffe0e0;
+}
+
+.tabla-clases tr:hover {
+    background-color: #ffb6b6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+    .contenedor-principal {
+        width: 95%;
+        padding: 0 15px;
+    }
+    
+    .tabla-clases td:first-child {
+        width: 150px;
+    }
+    
+    .tabla-clases img {
+        max-width: 100px;
+    }
+}
