@@ -4,13 +4,25 @@
         <meta charset="UTF-8">
         <title>Supervivientes</title>
         <link rel="stylesheet" href="CSS/Supervivientes.css">
+        <link rel="stylesheet" href="CSS/General.css">
     </head>
 
     <body>
+          <nav class="menu">
+        <ul>
+            <li><a href="Supervivientes.html">Supervivientes</a></li>
+        <li><a href="#Frontliner">Frontliner</a></li>
+        <li><a href="#Auxiliary">Auxiliary</a></li>
+        <li><a href="#Vanisher">Vanisher</a></li>
+        </ul>
+       
+            </nav>
         
         <header><h1>SUPERVIVIENTES</h1></header>
         <br>
+        <div class="texto">
         <img src="Recursos/Player_norm_.webp" alt="superviviente">
+        </div>
         <br>
         <p>
             El rol de supervivientes es el más común y el primero con el que jugarás al iniciar en el
@@ -36,7 +48,9 @@
             <h3>TIENDA</h3>
         </header>
         <br>
-        <img src="Recursos/RikaShop.png" width="600" alt="Tienda de Rika (No Refunds OST Visualizer)">
+        <div class="texto">
+        <img src="Recursos/RikaShop.png" width="50%" alt="Tienda de Rika (No Refunds OST Visualizer)">
+        </div>
         <br>
         <p>
             En el lobby, se encuentra ubicada la tienda de la Shookeper, la cual ofrece ítems muy útiles 
@@ -68,7 +82,7 @@
             </tr>
             <tr>
                 <td>
-                    <strong>Frontliner</strong>
+                    <strong id="Frontliner">Frontliner</strong>
                     <br>
                     <img src="Recursos/FarrelFrontliner.webp" alt="Clase Frontliner">
                 </td>
@@ -87,9 +101,46 @@
                 </td>
             </tr>
             <tr>
-                <td>Clase 2</td>
-                <td>Descripción de la clase 2</td>
+                <td>
+                    <strong id="Auxiliary">Auxiliary</strong>
+                    <br>
+                    <img src="Recursos/FarrelAuxiliary.webp" alt="clase auxiliary">
+                </td>
+                <td>Otorga al usuario un Boombox Super Fly Dorado en la espalda. Esta clase no modifica los puntos de vida ni la resistencia. El boombox se puede usar para activarse y, mientras está activado, tiene dos modos: un aura curativa 
+                    y un aura de velocidad, ambos activables por separado.
+                    <br>
+                    <strong>
+- Recupera 1hp por segundo.
+                        <br>
+- Stamina base de 100.
+                        <br>
+- Precio de 315 monedas.
+                    </strong>
+                </td>
+            </tr>
+        <tr>
+                <td>
+                    <strong id="Vanisher">Vanisher</strong>
+                    <br>
+                    <img src="Recursos/FarrelVanisher.webp" alt="clase Vaniseher">
+                </td>
+                <td>Otorga al usuario una poción púrpura en la cintura. Esta clase reduce los puntos de vida a 60 , pero aumenta la resistencia a 110. La poción se puede usar para volverse 
+                    invisible por un corto período o verterla sobre el usuario para curarse.
+                    <br>
+                    <strong>
+-Pocion de invisibilidad de 10 segundos.
+                        <br>
+-Stamina aumentada de 100 a 110.
+                        <br>
+-Recistencia reducida de 80 a 60.
+<br>
+-Precio de 315 monedas.
+                    </strong>
+                </td>
             </tr>
         </table>
+         <div class="float">
+            <div class="pascua a1"> <a href="General.html" alt="Volver"></div>
+        </div>
     </body>
 </html>
