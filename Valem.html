@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Valem</title>
+        <link rel="stylesheet" href="CSS/Valem.css">
+        <link rel="stylesheet" href="CSS/fuentes.css">
+    </head>
+    <body>
+        <header><h1>VALEM</h1></header>
+        <br>
+        <p>
+            Valem es un demonio de alto rango con aspecto de ave, nacido directamente del infierno. Es conocido por engañar a los mortales, 
+            prometiéndoles cumplir sus mayores deseos solo para matarlos y llevar sus almas codiciosas al infierno. A diferencia de Vapor y Rosemary, 
+            no fue humano, sino que es un ser natural del infierno y carece de alma, lo que le impide sentir amor. Desprecia profundamente a los 
+            demonios que fueron humanos y se refiere a sí mismo en plural al hablar de su especie.
+        </p>
+        <br>
+        <img src="Recursos\ValemRemodelNoBG.webp" alt="Valem" height="400">
+        <p>Render de Valem</p>
+        <br>
+        <audio src="Recursos\Valem-chase.ogg" controls></audio>
+        <p>Tema de Persecución de Valem</p>
+        <br>
+        <table border="1">
+            <tr>
+                <th>PRECIO</th>
+                <th>VELOCIDAD SPD</th>
+                <th>ESTAMINA</th>
+            </tr>
+            <tr>
+                <td>??? Monedas</td>
+                <td>24</td>
+                <td>75</td>
+            </tr>
+        </table>
+
+        <h2>Debuffs</h2>
+        <table border="1">
+            <tr>
+                <th colspan="2">Demonic Blindness</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Recursos\DemonicBlindnessDebuffValem.webp" alt="DemonicBlindness" width="150">
+                </td>
+                <td>
+                    Cuando un pecador entra en contacto con un Warp Orb, será cegado con un tono rojo y un efecto de viñeta más oscuro.
+                </td>
+            </tr>
+        </table>
+        <br>
+        
+        <table border="1">
+            <tr>
+                <th colspan="2">You are safe.</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Recursos\YouaresafeDebuffValem.webp" alt="YouAreSafe" width="150">
+                </td>
+                <td>
+                    Cuando un pecador entra en contacto con una ilusión (ya sea cargando o estática), recibirá <strong>10 de daño</strong>, será resaltado y obtendrá una visión 
+                    más oscura, junto con líneas de texto que aparecen en su pantalla. Si un pecador tiene menos del <strong>60% de HP</strong> y tiene este debuff, Valem puede 
+                    mantener presionada la tecla <strong>E</strong> cerca de él para ejecutarlo, atrayéndolo telepáticamente para robar su alma y matarlo instantáneamente.
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <h2>Pasiva</h2>
+        <table border="1">
+            <tr>
+                <th>"Damage/Sprinting Gimmick"</th>
+            </tr>
+            <tr>
+                <td>
+                    Por defecto, Valem no puede esprintar y su ataque básico hace muy poco daño. Para poder esprintar y aumentar el daño de su M1, Valem debe usar sus habilidades 
+                    de la siguiente manera:
+                    <ul>
+                        <li>Imitar ilusiones para aumentar el medidor de sprint.</li>
+                        <li>Golpear a un pecador con la explosión de una ilusión para aumentar el medidor de sprint.</li>
+                        <li>Absorber un Warp Orb para aumentar el daño del M1.</li>
+                        <li>Regresar a un Warp Orb para aumentar el daño del M1.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <h2>Habilidades</h2>
+        <table border="1">
+            <tr>
+                <th colspan="2">Psychic Flash / M1 / LMB</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Recursos\M1RecodeValem.webp" alt="PsychicFlash" width="150">
+                </td>
+                <td>
+                    Valem dispara un proyectil blanco que viaja hacia adelante, drenando <strong>10 de resistencia</strong> en el proceso. Este proyectil inflige 
+                    <strong>20 de daño</strong> al impactar a un superviviente. Si golpea a un superviviente cuerpo a cuerpo con el M1, recibirá <strong>10 de daño</strong>. 
+                    Esto no activa la animación de muerte.
+                </td>
+            </tr>
+        </table>
+        <br>
+        
+        <table border="1">
+            <tr>
+                <th colspan="2">Demonic Warp</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Recursos\DemonicWarpRecodeValem.webp" alt="DemonicWarp" width="150">
+                </td>
+                <td>
+                    Al usarla, Valem se vuelve invisible y drena <strong>25 de resistencia</strong>, generando un Warp Orb en la posición donde usó la habilidad. Valem puede salir 
+                    de la invisibilidad pasivamente después de <strong>4 segundos</strong> o presionando la tecla nuevamente, lo que al reaparecer generará otro Warp Orb. 
+                    Al interactuar con un Warp Orb, Valem se teletransporta a su posición, drenando <strong>25 de resistencia</strong> y obteniendo un aumento de daño y 
+                    un breve impulso al medidor de sprint.
+                </td>
+            </tr>
+        </table>
+        <br>
+        
+        <table border="1">
+            <tr>
+                <th colspan="2">Trickery</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Recursos\TrickeryRecodeValem.webp" alt="Trickery" width="150">
+                </td>
+                <td>
+                    Al usarla, Valem puede elegir entre generar una ilusión de sí mismo (clic M1) o imitar una ilusión (clic M2).<br>
+                    <br>
+                    <strong>Generar Ilusión:</strong> Aparece una ilusión frente a Valem que atrae a los supervivientes cercanos, resaltándolos. Si nadie se acerca, 
+                    la ilusión caminará hacia ellos. Valem puede hacer que la ilusión cargue contra un superviviente, cegándolo por unos segundos e infligiendo 
+                    <strong>25 de daño</strong>. Si un superviviente se acerca a la ilusión, esta desaparece, hace <strong>10 de daño</strong> y aplica el debuff 
+                    "You are safe".<br>
+                    <br>
+                    Valem puede ocupar el lugar de una ilusión drenando <strong>20 de resistencia</strong> para sorprender a los supervivientes.<br>
+                    <br>
+                    <strong>Imitar Ilusión:</strong> Valem obtiene un radio rojo a su alrededor. Si un superviviente entra en el radio, aumenta el medidor de sprint 
+                    de Valem. En este estado, puede llamar a los supervivientes (M1) o salir del estado de imitación recibiendo alas (M2).
+                </td>
+            </tr>
+        </table>
+        <br>
+        
+        <table border="1">
+            <tr>
+                <th colspan="2">Essence Returnal</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Recursos\EssenceReturnalRecodeValem.webp" alt="EssenceReturnal" width="150">
+                </td>
+                <td>
+                    Al usarla, Valem puede elegir eliminar todos los Warp Orbs o eliminar todas las ilusiones.<br>
+                    <br>
+                    <strong>Eliminar Warp Orbs:</strong> Aumenta el daño del M1 de Valem por un corto tiempo.<br>
+                    <strong>Eliminar Ilusiones:</strong> Hace que todas las ilusiones exploten, aumentando el medidor de sprint de Valem si las explosiones golpean 
+                    a algún superviviente.
+                </td>
+            </tr>
+        </table>
+        <br>
+    </body>
+</html>
