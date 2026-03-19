@@ -65,6 +65,12 @@ strong{
     transition-delay: 1s;
 }
 
+.a1:hover{
+    width: 25px;
+    background-color: rebeccapurple;
+    border-radius: 20px;
+}
+
 .pascua{
     width: 20px;
     height: 20px;
