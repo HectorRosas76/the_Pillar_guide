@@ -64,3 +64,30 @@ div #banner {
 .secciones li a:hover {
     color: red;
 }
+
+.menu{
+    position: sticky;
+    top: 0;
+    background-color: #290202;
+    width: 100%;
+    z-index: 15;
+
+}
+
+.menu ul{
+    display: table;
+    width: 100%;
+ margin: 0%;
+    padding: 0%;
+}
+
+.menu li{
+    display: table-cell;
+    text-align: center;
+}
+
+.menu a{
+    display: block;
+    padding: 20px;
+    color: white;
+}
