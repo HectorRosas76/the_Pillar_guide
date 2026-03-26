@@ -3,158 +3,141 @@
     <head>
         <meta charset="UTF-8">
         <title>The Fogborn</title>
-        <link rel="stylesheet" href="CSS/Fogborn.css">
+        <link rel="stylesheet" href="CSS/Monstruo_Perfil.css">
         <link rel="stylesheet" href="CSS/fuentes.css">
     </head>
     <body>
-        <header><h1>THE FOGBORN</h1></header>
-        <br>
-        <p>
-            The Fogborn es una criatura esbelta y semi-acuática que habita en grandes masas de agua. Abandona el agua durante tormentas o niebla para cazar humanos. 
-            Posee habilidades inhumanas como manipulación de rayos, velocidad extrema y su icónica "Mirada Paralizante", que deja a sus presas inmóviles al hacer 
-            contacto visual. Es un depredador sigiloso que usa la niebla y la electricidad para acechar a sus víctimas.
-        </p>
-        <br>
-        <img src="Recursos\Monstruos\Fogborn\Frogborn.webp" alt="Fogborn" height="400">
-        <p>Render de The Fogborn</p>
-        <br>
-        <audio src="Recursos\Monstruos\Fogborn\Fogborn_Chase_NEW.ogg" controls></audio>
-        <p>Tema de Persecución de The Fogborn</p>
-        <br>
-        
-        <h2>Estadísticas</h2>
-        <table border="1">
-            <tr>
-                <th>PRECIO</th>
-                <th>VELOCIDAD SPD</th>
-                <th>ESTAMINA</th>
-            </tr>
-            <tr>
-                <td>1,250 Monedas</td>
-                <td>21</td>
-                <td>90</td>
-            </tr>
-        </table>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="Monstruos.html">MONSTRUOS</a></li>
+                <li><a href="Supervivientes.html">SUPERVIVIENTES</a></li>
+            </ul>
+        </nav>
 
-        <h2>Debuffs</h2>
-        <table border="1">
-            <tr>
-                <th colspan="2">Fog Dazed</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Fogborn\FogDazedEffects.webp" alt="FogDazed" width="150">
-                </td>
-                <td>
+        <div class="contenedor-principal">
+            <header><h1>THE FOGBORN</h1></header>
+            <br>
+
+            <div class="imagen-principal">
+                <img src="Recursos\Monstruos\Fogborn\Frogborn.webp" alt="Fogborn" height="400">
+                <p>Render de The Fogborn</p>
+            </div>
+
+            <p>
+                The Fogborn es una criatura esbelta y semi-acuática que habita en grandes masas de agua. Abandona el agua durante tormentas o niebla para cazar humanos. 
+                Posee habilidades inhumanas como manipulación de rayos, velocidad extrema y su icónica "Mirada Paralizante", que deja a sus presas inmóviles al hacer 
+                contacto visual. Es un depredador sigiloso que usa la niebla y la electricidad para acechar a sus víctimas.
+            </p>
+            <br>
+
+            <div class="audio-container">
+                <audio src="Recursos\Monstruos\Fogborn\Fogborn_Chase_NEW.ogg" controls></audio>
+                <p>Tema de Persecución de The Fogborn</p>
+            </div>
+
+            <h2>Estadisticas</h2>
+            <div class="grid-estadisticas">
+                <div class="grid-header">PRECIO</div>
+                <div class="grid-header">VELOCIDAD (SPD)</div>
+                <div class="grid-header">ESTAMINA</div>
+                <div class="grid-dato">1,250 Monedas</div>
+                <div class="grid-dato">21</div>
+                <div class="grid-dato">90</div>
+            </div>
+
+            <h2>Debuffs</h2>
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Fog Dazed</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos/Monstruos/Fogborn/FogDazedEffects.webp" alt="FogDazed">
+                </div>
+                <div class="habilidad-descripcion">
                     Se aplica a los supervivientes que miran a The Fogborn cuando usa <strong>Paralyzing Gaze</strong>. Este debuff detiene completamente el movimiento del 
                     superviviente y fuerza su cámara a fijarse en The Fogborn. El tiempo de aturdimiento varía según la distancia del superviviente, siendo el máximo de 
                     <strong>7 segundos</strong> y el mínimo de <strong>2.5 segundos</strong>. Este debuff termina pasivamente y no puede terminar si The Fogborn golpea al 
                     superviviente.
-                </td>
-            </tr>
-        </table>
-        <br>
-        
-        <table border="1">
-            <tr>
-                <th colspan="2">Electrocuted</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Fogborn\FogbornElectrocuteEffect.webp" alt="Electrocuted" width="150">
-                </td>
-                <td>
+                </div>
+            </div>
+            <br>
+            
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Electrocuted</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos/Monstruos/Fogborn/FogbornElectrocuteEffect.webp" alt="Electrocuted">
+                </div>
+                <div class="habilidad-descripcion">
                     Se aplica a los supervivientes cuando son golpeados por el rayo de The Fogborn, ya sea de <strong>Staticbiosis</strong> o cuando se enfurece al llenar el 
                     medidor de Exposure. Este debuff inflige daño por ticks de <strong>1</strong> cada cierto tiempo, haciendo un total de <strong>28 de daño</strong>.
-                </td>
-            </tr>
-        </table>
-        <br>
+                </div>
+            </div>
+            <br>
 
-        <h2>Pasivas</h2>
-        <table border="1">
-            <tr>
-                <th colspan="2">Tracker</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Fogborn\FogbornIndicator.webp" alt="Tracker" width="150">
-                </td>
-                <td>
+            <h2>Pasivas</h2>
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Tracker</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos/Monstruos/Fogborn/FogbornIndicator.webp" alt="Tracker">
+                </div>
+                <div class="habilidad-descripcion">
                     Cualquier superviviente que mire a The Fogborn será resaltado y aparecerá una notificación en la interfaz de The Fogborn.
-                </td>
-            </tr>
-        </table>
-        <br>
-        
-        <table border="1">
-            <tr>
-                <th colspan="2">Exposure Meter</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Fogborn\FogbornExposure.webp" alt="ExposureMeter" width="150">
-                </td>
-                <td>
+                </div>
+            </div>
+            <br>
+            
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Exposure Meter</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos/Monstruos/Fogborn/FogbornExposure.webp" alt="ExposureMeter">
+                </div>
+                <div class="habilidad-descripcion">
                     The Fogborn tiene un medidor de Exposure que se llena rápidamente pasivamente o al golpear supervivientes. Este medidor no aumenta cuando The Fogborn usa 
                     <strong>Staticbiosis</strong>, gatea o mata a un jugador. Mirar a The Fogborn drena su medidor de impaciencia.<br>
                     <br>
                     Cuando está completamente lleno, The Fogborn entra en un estado de furia, ganando la capacidad de esprintar mientras usa <strong>Stalking Stance</strong> 
                     junto con un aumento de velocidad de <strong>25</strong> al gatear. También reduce su daño al gatear, infligiendo <strong>15 de daño</strong> en lugar de 
                     <strong>35</strong>.
-                </td>
-            </tr>
-        </table>
-        <br>
+                </div>
+            </div>
+            <br>
 
-        <h2>Habilidades</h2>
-        <table border="1">
-            <tr>
-                <th colspan="2">M1 / LMB</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Fogborn\FogbornM1.webp" alt="M1" width="150">
-                </td>
-                <td>
+            <h2>Habilidades</h2>
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">M1 / LMB</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos/Monstruos/Fogborn/FogbornM1.webp" alt="Fogborn M1">
+                </div>
+                <div class="habilidad-descripcion">
                     The Fogborn araña con sus garras dos veces, infligiendo <strong>15 de daño</strong> por golpe, para un total de <strong>30 de daño</strong>. 
                     Al gatear, The Fogborn muerde hacia adelante, infligiendo <strong>35 de daño</strong>. Cuando no está en estado de furia, golpear a alguien con el M1 
                     añade un porcentaje al medidor de impaciencia.<br>
                     <br>
                     Cuando The Fogborn mata a un superviviente, lo tira al suelo y le arranca la cabeza antes de tragarla entera. Si mata mientras gatea, la animación 
                     es más corta.
-                </td>
-            </tr>
-        </table>
-        <br>
-        
-        <table border="1">
-            <tr>
-                <th colspan="2">Paralyzing Gaze</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Fogborn\FogbornParalizingGaze.webp" alt="ParalyzingGaze" width="150">
-                </td>
-                <td>
+                </div>
+            </div>
+            <br>
+            
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Paralyzing Gaze</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos/Monstruos/Fogborn/FogbornParalizingGaze.webp" alt="Fogborn Paralyzing Gaze">
+                </div>
+                <div class="habilidad-descripcion">
                     The Fogborn carga su mirada, moviendo la cabeza rápidamente mientras el brillo de sus ojos aumenta. Después de cargar, silba brevemente 
                     antes de entrar en una postura con las pupilas parpadeantes, paralizando a todos los supervivientes que miran su cara. Los supervivientes 
                     afectados quedan inmóviles por un tiempo variable según su distancia. The Fogborn no puede esprintar pero puede caminar al usar esta habilidad, 
                     ganando un impulso de velocidad de <strong>10</strong> por <strong>1-2 segundos</strong> al usarla.
-                </td>
-            </tr>
-        </table>
-        <br>
-        
-        <table border="1">
-            <tr>
-                <th colspan="2">Staticbiosis</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Fogborn\StaticBosisFogborn.webp" alt="Staticbiosis" width="150">
-                </td>
-                <td>
+                </div>
+            </div>
+            <br>
+            
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Staticbiosis</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos/Monstruos/Fogborn/StaticBosisFogborn.webp" alt="Fogborn Staticbiosis">
+                </div>
+                <div class="habilidad-descripcion">
                     The Fogborn se agacha e invoca un rayo en su posición, volviéndose invisible durante <strong>2.95 segundos</strong>. Cuando es invisible, 
                     puede moverse a alta velocidad (<strong>50 SPD</strong>) y volar. Un medidor indica cuánto tiempo permanece invisible. Cuando el medidor se 
                     llena, cae al suelo si está volando e invoca un rayo en su ubicación, reapareciendo con un rayo y un pequeño retraso.<br>
@@ -162,27 +145,23 @@
                     Si el rayo golpea a un superviviente, este recibe el debuff <strong>Electrocuted</strong>, mientras que The Fogborn tiene un retraso mayor y 
                     el enfriamiento de Staticbiosis aumenta a <strong>10 segundos</strong>. Puede golpear con el rayo de entrada y salida, pero el enfriamiento 
                     solo aumenta una vez. Este golpe puede ser bloqueado por clases con habilidades de bloqueo.
-                </td>
-            </tr>
-        </table>
-        <br>
-        
-        <table border="1">
-            <tr>
-                <th colspan="2">Stalking Stance</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Fogborn\FogbornCrawl.webp" alt="StalkingStance" width="150">
-                </td>
-                <td>
+                </div>
+            </div>
+            <br>
+            
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Stalking Stance</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos/Monstruos/Fogborn/FogbornCrawl.webp" alt="Fogborn Stalking Stance">
+                </div>
+                <div class="habilidad-descripcion">
                     The Fogborn se pone en cuatro patas y comienza a gatear. Mientras gatea, silencia todos sus sonidos, aumenta su daño, no puede esprintar 
                     (a menos que esté enfurecido) y reduce su velocidad de caminata a <strong>16.5</strong>. No puede usar <strong>Paralyzing Gaze</strong> en 
                     este estado, pero puede usar <strong>Staticbiosis</strong>. El ícono indica que no puede esprintar, pero desaparece cuando está enfurecido, 
                     permitiéndole esprintar mientras gatea.
-                </td>
-            </tr>
-        </table>
-        <br>
+                </div>
+            </div>
+            <br>
+        </div>
     </body>
 </html>

@@ -1,113 +1,118 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Vapor</title>
-        <link rel="stylesheet" href="CSS/Vapor.css">
-        <link rel="stylesheet" href="CSS/fuentes.css">
-    </head>
-    <body>
-        <header><h1>VAPOR</h1></header>
-        <br>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Vapor</title>
+    <link rel="stylesheet" href="CSS/Monstruo_Perfil.css">
+    <link rel="stylesheet" href="CSS/fuentes.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="Monstruos.html">MONSTRUOS</a></li>
+            <li><a href="Supervivientes.html">SUPERVIVIENTES</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-principal">
+        <header>
+            <h1>VAPOR</h1>
+        </header>
+
+        <!-- Imagen principal del monstruo -->
+        <div class="imagen-principal">
+            <img src="Recursos/Monstruos/Vapor/Vapor_Remodel_Render.webp" alt="Render de Vapor">
+            <p>Render de Vapor</p>
+        </div>
+
+        <!-- Descripción -->
         <p>
             Vapor es una alma humana pecadora que después de años de castigo se convirtió en un demonio, el cual se encarga de seguir ordenes
             de demonios superiores a él; tiene un cuerpo muscular de un color rojo sin un brazo izquierdo, ni parte inferior del cuerpo, su 
             cara está deformada y cuenta con cuernos. Tiene una fuerza brutal con poderes de teletransportación, control del cuerpo y la capacidad
             de crear craneos araña a partir del craneo de sus victimas, los cuáles atacarán a otras victimas.
         </p>
-        <br>
-        <img src="Recursos\Monstruos\Vapor\Vapor_Remodel_Render.webp" alt="Vapor" height="400">
-        <p>Render de Vapor</p>
-        <br>
-        <audio src="Recursos\Monstruos\Vapor\VaporChaseTheme.ogg" controls></audio>
-        <p>Tema de Persecución de Vapor</p>
-        <br>
-        <table border="1">
-            <tr>
-                <th>PRECIO</th>
-                <th>VELOCIDAD SPD</th>
-                <th>ESTAMINA</th>
-            </tr>
-            <tr>
-                <td>Gratuito</td>
-                <td>18</td>
-                <td>110</td>
-            </tr>
-        </table>
-        <br>
+
+        <!-- Audio del tema de persecución -->
+        <div class="audio-container">
+            <audio src="Recursos/Monstruos/Vapor/VaporChaseTheme.ogg" controls></audio>
+            <p>Tema de Persecución de Vapor</p>
+        </div>
+
+        <!-- ========== ESTADÍSTICAS ========== -->
+        <h2>Estadisticas</h2>
+        <div class="grid-estadisticas">
+            <div class="grid-header">PRECIO</div>
+            <div class="grid-header">VELOCIDAD (SPD)</div>
+            <div class="grid-header">ESTAMINA</div>
+            <div class="grid-dato">Gratuito</div>
+            <div class="grid-dato">18</div>
+            <div class="grid-dato">110</div>
+        </div>
+
+        <!-- ========== PASIVAS ========== -->
         <h2>Pasivas</h2>
-        <table border="1">
-            <tr>
-                <th colspan="2">Arañas de Craneo</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Vapor\Vapor_SpiderSkullPassive29.webp" alt="SpiderSkull" width="150">
-                </td>
-                <td>
-                    Despues de matar a un superviviente con su ataque basico, Vapor usa el craneo de su victima para crear una araña de craneo,
-                    la cuál será controlada por el jugador que mató y atacará a otros supervivientes.
-                </td>
-        </table>
-        <br>
+        <div class="grid-habilidad">
+            <div class="habilidad-titulo">Spider Skulls</div>
+            <div class="habilidad-imagen">
+                <img src="Recursos/Monstruos/Vapor/Vapor_SpiderSkullPassive29.webp" alt="SpiderSkull">
+            </div>
+            <div class="habilidad-descripcion">
+                Después de matar a un superviviente con su ataque básico, Vapor usa el cráneo de su víctima para crear una araña de cráneo,
+                la cuál será controlada por el jugador que mató y atacará a otros supervivientes.
+            </div>
+        </div>
+
+        <!-- ========== HABILIDADES ========== -->
         <h2>Habilidades</h2>
-        <table border="1">
-            <tr>
-                <th colspan="2">Ataque basico (M1)</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Vapor\Vapor_M1.webp" alt="BasicAttack" width="150">
-                </td>
-                <td>
-                    Vapor usa su brazo izquierdo para dar un puño que da <strong>30 de daño</strong> a los supervivientes al golpearlos.
-                </td>
-            </tr>
-        </table>
-        <br>
-        <table border="1">
-            <tr>
-                <th colspan="2">Scorching Grip</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Vapor\Vapor_ScorchingGrip.webp" alt="ScorchingGrip" width="150">
-                </td>
-                <td>
-                    Vapor prepara un ataque de agarre el cuál al darle a un superviviente, este lo atrapara y agarrará para quemarlo, dandole <strong>1 de daño</strong>
-                    por cada 0.2 segundos. El agarre puede ser cancelado por una abilidad de empuje de cualquier clase que cuente con ella.
-                </td>
-            </tr>
-        </table>
-        <br>
-        <table border="1">
-            <tr>
-                <th colspan="2">Demonic Shift</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Vapor\Vapor_DemonicShift.webp" alt="DemonicShift" width="150">
-                </td>
-                <td>
-                    Vapor se prepara para transportarse a cierta distancia especificada por el indicador, tomará un tiempo para teletransportarse y si lo hace cerca
-                    de un superviviente, recibirá <strong>15 de daño</strong>, será cegado por un jumpscare y su camara girarán.
-                </td>
-            </tr>
-        </table>
-        <table border="1">
-            <tr>
-                <th colspan="2">Blazing Cage</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Recursos\Monstruos\Vapor\Vapor_BlazingCage.webp" alt="BlazingCage" width="150">
-                </td>
-                <td>
-                    Vapor invoca un anillo de fuego el cual cubre un area al rededor de el y cualquier superviviente cerca de el, si un superviviente se atreve a salir del 
-                    anillo, será quemado por 3.5 segundos recibiando <strong>3 de daño</strong> por cada 0.2 segundos, el anillo dura 8 segundas.
-                </td>
-            </tr>
-        </table>
-        <br>
-    </body>
+
+        <!-- Ataque básico -->
+        <div class="grid-habilidad">
+            <div class="habilidad-titulo">Ataque basico (M1)</div>
+            <div class="habilidad-imagen">
+                <img src="Recursos/Monstruos/Vapor/Vapor_M1.webp" alt="Ataque básico">
+            </div>
+            <div class="habilidad-descripcion">
+                Vapor usa su brazo izquierdo para dar un puño que da <strong>30 de daño</strong> a los supervivientes al golpearlos.
+            </div>
+        </div>
+
+        <!-- Scorching Grip -->
+        <div class="grid-habilidad">
+            <div class="habilidad-titulo">Scorching Grip</div>
+            <div class="habilidad-imagen">
+                <img src="Recursos/Monstruos/Vapor/Vapor_ScorchingGrip.webp" alt="Scorching Grip">
+            </div>
+            <div class="habilidad-descripcion">
+                Vapor prepara un ataque de agarre el cuál al darle a un superviviente, este lo atrapará y agarrará para quemarlo, dándole <strong>1 de daño</strong>
+                por cada 0.2 segundos. El agarre puede ser cancelado por una habilidad de empuje de cualquier clase que cuente con ella.
+            </div>
+        </div>
+
+        <!-- Demonic Shift -->
+        <div class="grid-habilidad">
+            <div class="habilidad-titulo">Demonic Shift</div>
+            <div class="habilidad-imagen">
+                <img src="Recursos/Monstruos/Vapor/Vapor_DemonicShift.webp" alt="Demonic Shift">
+            </div>
+            <div class="habilidad-descripcion">
+                Vapor se prepara para transportarse a cierta distancia especificada por el indicador, tomará un tiempo para teletransportarse y si lo hace cerca
+                de un superviviente, recibirá <strong>15 de daño</strong>, será cegado por un jumpscare y su cámara girará.
+            </div>
+        </div>
+
+        <!-- Blazing Cage -->
+        <div class="grid-habilidad">
+            <div class="habilidad-titulo">Blazing Cage</div>
+            <div class="habilidad-imagen">
+                <img src="Recursos/Monstruos/Vapor/Vapor_BlazingCage.webp" alt="Blazing Cage">
+            </div>
+            <div class="habilidad-descripcion">
+                Vapor invoca un anillo de fuego el cual cubre un área alrededor de él y cualquier superviviente cerca de él. Si un superviviente se atreve a salir del 
+                anillo, será quemado por 3.5 segundos recibiendo <strong>3 de daño</strong> por cada 0.2 segundos. El anillo dura 8 segundos.
+            </div>
+        </div>
+    </div>
+</body>
 </html>
