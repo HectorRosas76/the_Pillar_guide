@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rosemary</title>
+        <link rel="stylesheet" href="CSS/Monstruo_Perfil.css">
+        <link rel="stylesheet" href="CSS/fuentes.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="Monstruos.html">MONSTRUOS</a></li>
+                <li><a href="Supervivientes.html">SUPERVIVIENTES</a></li>
+            </ul>
+        </nav>
+        
+        <div class="contenedor-principal">
+            <header><h1>ROSEMARY</h1></header>
+            <br>
+
+            <div class="imagen-principal">
+                <img src="Recursos\Monstruos\Rosemary\RoseRender.webp" alt="Rosemary" height="400">
+                <p>Render de Rosemary</p>
+            </div>
+
+            <p>
+                Rosemary es una delgada figura humanoide, un demonio conocido por sus fuertes gritos. Originalmente fue humana, pero después de años siendo castigada 
+                por sus pecados en el infierno, fue transformada en un demonio. Se le ha encomendado la tarea de castigar a los pecadores que son enviados al infierno. 
+                No es tan dotada como su compañero demonio Vapor, pero sigue siendo extremadamente poderosa, con una durabilidad sobrehumana, sentidos extremadamente 
+                agudos y la capacidad de usar su voz como arma. A veces, los demonios superiores le asignan tareas, pero generalmente se queda en el infierno para cumplir 
+                con sus deberes.
+            </p>
+            <br>
+
+            <div class="audio-container">
+                <audio src="Recursos\Monstruos\Rosemary\RosemaryChaseThemeNew.ogg" controls></audio>
+                <p>Tema de Persecución de Rosemary</p>
+            </div>
+            <br>
+
+            <h2>Estadisticas</h2>
+            <div class="grid-estadisticas">
+                <div class="grid-header">PRECIO</div>
+                <div class="grid-header">VELOCIDAD SPD</div>
+                <div class="grid-header">ESTAMINA</div>
+                <div class="grid-dato">Gratuito</div>
+                <div class="grid-dato">20</div>
+                <div class="grid-dato">95</div>
+            </div>
+
+            <h2>Debuffs (Efectos)</h2>
+
+            <!-- Soul Shiver -->
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Soul Shiver</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos\Monstruos\Rosemary\SoulShiver.webp" alt="SoulShiver" width="150">
+                </div>
+                <div class="habilidad-descripcion">
+                    Debuff infligido por <strong>Soul Traversal</strong>. Aumenta la velocidad del superviviente en un <strong>2%</strong> y el drenaje de su resistencia en un <strong>3%</strong>, 
+                    pero reduce su defensa en un <strong>30%</strong> (recibe un 30% más de daño). Los supervivientes afectados son resaltados para Rosemary y su pantalla se tiñe de rojo.
+                </div>
+            </div>
+
+            <!-- Withering -->
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Withering</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos\Monstruos\Rosemary\Withering.webp" alt="Withering" width="150">
+                </div>
+                <div class="habilidad-descripcion">
+                    Debuff infligido por <strong>Demonic Essence</strong>. Inflige <strong>1 de daño</strong> cada <strong>0.5 segundos</strong> mientras esté activo. 
+                    Este debuff puede contagiarse a otros supervivientes cercanos, pero no puede matar al superviviente directamente.
+                </div>
+            </div>
+
+            <!-- Ruptured -->
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Ruptured</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos\Monstruos\Rosemary\Ruptured.webp" alt="Ruptured" width="150">
+                </div>
+                <div class="habilidad-descripcion">
+                    Debuff infligido por <strong>Demonic Shriek</strong>. Mientras está activo, el audio y la visión del superviviente se distorsionan y nublan gravemente, 
+                    además de <strong>impedir que pueda esprintar</strong>.
+                </div>
+            </div>
+
+            <h2>Buffs</h2>
+
+            <!-- Essence Covered -->
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Essence Covered</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos\Monstruos\Rosemary\EssenceCovered.webp" alt="EssenceCovered" width="150">
+                </div>
+                <div class="habilidad-descripcion">
+                    Rosemary obtiene este buff al tocar la esencia que ella misma exparció, incrementa un poco la velocidad y regeneración de estamina por 
+                    <strong>3.85 segundos</strong>. Los supervivientes al ser tocados por Rosemary con el buff, reciben el debuff <strong>Withering</strong>.
+                </div>
+            </div>
+
+            <h2>Pasivas</h2>
+
+            <!-- Passive Echolocation -->
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Passive Echolocation</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos\Monstruos\Rosemary\RosemaryPassive.webp" alt="PassiveEcholocation" width="150">
+                </div>
+                <div class="habilidad-descripcion">
+                    Cada vez que un superviviente hace un sonido (como correr o interactuar), es resaltado para Rosemary durante unos segundos.
+                </div>
+            </div>
+
+            <h2>Habilidades</h2>
+
+            <!-- Ataque básico -->
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Ataque basico (M1)</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos\Monstruos\Rosemary\RosemaryM1.webp" alt="BasicAttack" width="150">
+                </div>
+                <div class="habilidad-descripcion">
+                    Rosemary se abalanza hacia adelante para atacar con su presencia, infligiendo <strong>25 de daño</strong> a los supervivientes.
+                </div>
+            </div>
+
+            <!-- Demonic Shriek -->
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Demonic Shriek</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos\Monstruos\Rosemary\DemonicShriekRecode.webp" alt="DemonicShriek" width="150">
+                </div>
+                <div class="habilidad-descripcion">
+                    Rosemary suelta un grito continuo en un área. Inflige <strong>2 de daño</strong> por golpe cada <strong>0.18 segundos</strong> y drena <strong>2 de resistencia</strong> 
+                    a los supervivientes por golpe. Cada golpe acertado aumenta la velocidad de Rosemary en un <strong>7.2%</strong> durante 3 segundos (efecto acumulable). 
+                    El grito puede cancelarse manualmente, al quedarse sin resistencia o al recibir un golpe de empuje. Durante el grito, no puede esprintar ni usar otras habilidades.
+                </div>
+            </div>
+
+            <!-- Demonic Essence -->
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Demonic Essence</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos\Monstruos\Rosemary\DemonicEssence.webp" alt="DemonicEssence" width="150">
+                </div>
+                <div class="habilidad-descripcion">
+                    Rosemary crea una esencia oscura en su posición que dura entre <strong>10 y 45 segundos</strong>. Los supervivientes que entren en el área reciben el debuff 
+                    <strong>Withering</strong> durante 5 segundos (se refresca mientras permanezcan dentro). La duración de la esencia depende de cuánta energía demoníaca 
+                    se use al crearla. Esta habilidad tiene solo <strong>2 segundos</strong> de enfriamiento, pero consume energía demoníaca, la cual se recarga 
+                    lentamente o al golpear con otras habilidades.
+                </div>
+            </div>
+
+            <!-- Soul Traversal -->
+            <div class="grid-habilidad">
+                <div class="habilidad-titulo">Soul Traversal</div>
+                <div class="habilidad-imagen">
+                    <img src="Recursos\Monstruos\Rosemary\SoulTraversal.webp" alt="SoulTraversal" width="150">
+                </div>
+                <div class="habilidad-descripcion">
+                    Rosemary se queda quieta y libera su alma en forma de orbe. Puede atravesar paredes a velocidad <strong>17</strong> durante <strong>10 segundos</strong>. 
+                    Al golpear a un superviviente, inflige <strong>10 de daño</strong>, aplica el debuff <strong>Soul Shiver</strong> durante 10 segundos y aumenta su velocidad 
+                    en <strong>8</strong> por el resto de la duración de la habilidad (acumulable por cada golpe). La habilidad termina al cancelarla, al acabarse el tiempo, 
+                    o si el cuerpo de Rosemary es golpeado por una habilidad de empuje. Durante la habilidad, la ecolocación pasiva se desactiva y el tiempo de la partida 
+                    se ralentiza.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

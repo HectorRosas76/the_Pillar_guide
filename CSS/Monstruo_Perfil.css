@@ -25,6 +25,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    table-layout: fixed; /* Esto fuerza a las celdas a tener el mismo ancho sin importar el contenido */
 }
 
 .menu li {
@@ -64,7 +65,7 @@ header {
 h1 {
     font-family: 'Pillar_Font', Impact, 'Arial Black', sans-serif;
     color: red;
-    font-size: 40px;
+    font-size: 55px;
     margin: 20px 0 10px;
     text-shadow: 2px 2px 0 black;
 }
@@ -73,8 +74,8 @@ h2 {
     font-family: 'Pillar_Font', Impact, 'Arial Black', sans-serif;
     color: #290202;
     font-size: 30px;
-    border-bottom: 2px solid red;
-    padding-bottom: 5px;
+    border-top: 2px solid red;
+    padding-top: 20px;
     margin-top: 30px;
 }
 
@@ -127,18 +128,18 @@ p {
     margin-top: 5px;
 }
 
-/* ===== TABLAS ===== */
-/* Tabla de estadísticas generales (sin imágenes) */
-.tabla-estadisticas {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+/* ===== GRID PARA ESTADÍSTICAS ===== */
+.grid-estadisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: rgba(255, 255, 255, 0.9);
-    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #290202;
 }
 
-.tabla-estadisticas th {
+.grid-estadisticas .grid-header {
     background-color: #290202;
     color: white;
     font-family: 'Pillar_Font', Impact, sans-serif;
@@ -148,66 +149,58 @@ p {
     border: 1px solid black;
 }
 
-.tabla-estadisticas td {
+.grid-estadisticas .grid-dato {
     border: 1px solid #290202;
     padding: 12px;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-}
-
-/* Tablas de habilidades (con imagen a la izquierda) */
-.tabla-habilidad {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
     background-color: rgba(255, 255, 255, 0.9);
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.tabla-habilidad th {
+/* ===== GRID PARA HABILIDADES ===== */
+.grid-habilidad {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    border: 1px solid #290202;
+}
+
+.habilidad-titulo {
+    grid-column: span 2;
     background-color: #290202;
     color: white;
     font-family: 'Pillar_Font', Impact, sans-serif;
     font-size: 22px;
     padding: 12px;
     text-align: center;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
-.tabla-habilidad td {
-    border: 1px solid #290202;
+.habilidad-imagen {
+    grid-column: span 1;
     padding: 15px;
-    vertical-align: middle;
-}
-
-/* Celda de la imagen: sin bordes en la imagen */
-.tabla-habilidad .imagen-habilidad {
-    width: 200px;
     text-align: center;
     background-color: rgba(255, 240, 240, 0.8);
+    border-right: 1px solid #290202;
 }
 
-.tabla-habilidad .imagen-habilidad img {
+.habilidad-imagen img {
     max-width: 150px;
     height: auto;
     display: block;
     margin: 0 auto;
-    /* SIN BORDES */
     border: none;
-    border-radius: 0;
 }
 
-/* Texto de la habilidad */
-.tabla-habilidad td:last-child {
+.habilidad-descripcion {
+    grid-column: span 1;
+    padding: 15px;
     font-size: 18px;
     text-align: left;
-}
-
-/* Alternar colores en filas para mejorar legibilidad */
-.tabla-habilidad tr:nth-child(even) {
-    background-color: #ffe0e0;
+    line-height: 1.5;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -216,29 +209,23 @@ p {
         width: 95%;
         padding: 0 15px;
     }
-
-    .tabla-habilidad .imagen-habilidad {
-        width: 150px;
-    }
-
-    .tabla-habilidad .imagen-habilidad img {
-        max-width: 120px;
-    }
 }
 
 @media (max-width: 600px) {
-    .tabla-habilidad .imagen-habilidad {
-        display: block;
-        width: 100%;
+    .grid-estadisticas {
+        grid-template-columns: 1fr;
     }
-
-    .tabla-habilidad td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
+    
+    .grid-habilidad {
+        grid-template-columns: 1fr;
     }
-
-    .tabla-habilidad .imagen-habilidad img {
-        margin: 0 auto;
+    
+    .habilidad-titulo {
+        grid-column: span 1;
+    }
+    
+    .habilidad-imagen {
+        border-right: none;
+        border-bottom: 1px solid #290202;
     }
 }
