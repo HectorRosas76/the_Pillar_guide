@@ -44,6 +44,7 @@ strong{
     width: 100%;
     margin: 0;
     padding: 0;
+    table-layout: fixed;
 }
 
 .menu li  {display: table;
@@ -96,7 +97,7 @@ header {
 h1 {
     font-family: 'Pillar_Font', Impact, 'Arial Black', sans-serif;
     color: red;
-    font-size: 40px;
+    font-size: 55px;
     margin: 20px 0 10px;
     text-shadow: 2px 2px 0 black;
 }
@@ -105,8 +106,8 @@ h3 {
     font-family: 'Pillar_Font', Impact, 'Arial Black', sans-serif;
     font-size: 30px;
     color: darkred;
-    border-bottom: 2px solid red;
-    padding-bottom: 5px;
+    border-top: 2px solid red;
+    padding-top: 20px;
     margin-top: 30px;
 }
 
@@ -134,57 +135,48 @@ p {
     margin: 20px auto;
     max-width: 80%;
     height: auto;
-    border: 2px solid red;
-    border-radius: 8px;
 }
 
-/* ===== ESTILOS ESPECÍFICOS PARA LA TABLA DE CLASES ===== */
-.tabla-clases {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+/* ===== ESTILOS GRID PARA CLASES ===== */
+.grid-clases {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-color: rgba(255, 255, 255, 0.9);
-    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    border: 1px solid #290202;
 }
 
-.tabla-clases th {
+.clase-titulo {
+    grid-column: span 2;
     background-color: #290202;
     color: white;
     font-family: 'Pillar_Font', Impact, sans-serif;
     font-size: 22px;
     padding: 12px;
     text-align: center;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
-.tabla-clases td {
-    border: 1px solid #290202;
+.clase-imagen {
     padding: 15px;
-    vertical-align: top;
-}
-
-.tabla-clases td:first-child {
-    width: 200px;
     text-align: center;
-    font-weight: bold;
+    background-color: rgba(255, 240, 240, 0.8);
+    border-right: 1px solid #290202;
 }
 
-.tabla-clases img {
+.clase-imagen img {
     max-width: 150px;
     height: auto;
     display: block;
-    margin: 10px auto;
-    border: 2px solid red;
-    border-radius: 8px;
+    margin: 0 auto;
 }
 
-.tabla-clases tr:nth-child(even) {
-    background-color: #ffe0e0;
-}
-
-.tabla-clases tr:hover {
-    background-color: #ffb6b6;
+.clase-descripcion {
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5;
 }
 
 
